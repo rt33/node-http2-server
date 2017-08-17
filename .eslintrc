@@ -1,0 +1,98 @@
+{
+  "extends": "airbnb",
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "node": true,
+    "es6": true
+  },
+
+  "plugins": [
+    "import",
+    "dependencies"
+  ],
+
+  "rules": {
+    //Possible Errors
+    "no-console": "error",
+    "no-unexpected-multiline": "error",
+
+    // Best Practices
+    "consistent-return": "off",
+    "class-methods-use-this": "off",
+    "dot-location": ["error", "property"],
+    "no-implicit-globals": "error",
+    "no-invalid-this": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unmodified-loop-condition": "error",
+    "no-useless-call": "error",
+
+    // Variables
+    "no-catch-shadow": "error",
+    "no-label-var": "error",
+    "no-shadow": "off",
+    "no-undef-init": "error",
+    "no-use-before-define": ["error", "nofunc"],
+    "no-unused-vars": ["error", { "args": "none" }],
+
+    // Node.js
+    "callback-return": "off",
+    "global-require": "off",
+    "no-path-concat": "error",
+
+    // Stylistic Issues
+    "linebreak-style": ["error", "unix"],
+    "no-nested-ternary": "off",
+    "no-plusplus": "off",
+    "semi": ["error", "never"],
+
+    // ECMAScript 6
+    "arrow-parens": ["error", "always"],
+    "no-confusing-arrow": "off",
+    "constructor-super": "error",
+    "generator-star-spacing": ["error", "after"],
+    "no-this-before-super": "error",
+    "no-useless-rename": ["error", { "ignoreExport": true }],
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "prefer-template": "off",
+    "prefer-spread": "error",
+
+    // import
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/prefer-default-export": "off",
+    "import/no-mutable-exports": "off",
+    "import/no-dynamic-require": "off",
+
+    // dependencies
+    "dependencies/case-sensitive": "error",
+    "dependencies/no-cycles": "error",
+
+    // lodash-fp
+    "lodash-fp/consistent-compose": ["error", "flow"],
+    "lodash-fp/consistent-name": ["error", "lodash"],
+    "lodash-fp/no-argumentless-calls": "error",
+    "lodash-fp/no-chain": "error",
+    "lodash-fp/no-extraneous-args": "error",
+    "lodash-fp/no-extraneous-function-wrapping": "error",
+    "lodash-fp/no-extraneous-iteratee-args": "error",
+    "lodash-fp/no-for-each": "off",
+    "lodash-fp/no-partial-of-curried": "error",
+    "lodash-fp/no-single-composition": "error",
+    "lodash-fp/no-submodule-destructuring": "error",
+    "lodash-fp/no-unused-result": "error",
+    "lodash-fp/prefer-compact": "error",
+    "lodash-fp/prefer-composition-grouping": "error",
+    "lodash-fp/prefer-constant": ["error", {"arrowFunctions": false}],
+    "lodash-fp/prefer-flat-map": "error",
+    "lodash-fp/prefer-get": "error",
+    "lodash-fp/preferred-alias": "off",
+    "lodash-fp/use-fp": "error",
+
+    // coding styles
+    "max-len": ["error", 120]
+  }
+}
